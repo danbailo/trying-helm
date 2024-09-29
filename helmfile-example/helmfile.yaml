@@ -1,0 +1,14 @@
+releases:
+  - name: some-application
+    namespace: default
+    chart: ./some-chart
+    version: 1.2.3
+    values:
+      - ./values.yaml
+
+  - name: another-application
+    namespace: default
+    chart: ./another-chart
+    version: 4.5.6
+    values:
+      - ./values.yaml

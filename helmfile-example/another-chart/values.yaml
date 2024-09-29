@@ -1,0 +1,14 @@
+deployments:
+  - name: app1
+    replicas: 2
+    image:
+      repository: nginx
+      tag: "1.19.6"
+    port: 80
+
+  - name: app2
+    replicas: 3
+    image:
+      repository: redis
+      tag: "6.0"
+    port: 6379
