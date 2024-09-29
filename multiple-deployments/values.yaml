@@ -1,0 +1,21 @@
+deployment1:
+  name: app1
+  replicas: 2
+  image:
+    repository: nginx
+    tag: "1.19.6"
+  ports:
+    - containerPort: 80
+  labels:
+    tier: frontend
+
+deployment2:
+  name: app2
+  replicas: 3
+  image:
+    repository: redis
+    tag: "6.0"
+  ports:
+    - containerPort: 6379
+  labels:
+    tier: backend
