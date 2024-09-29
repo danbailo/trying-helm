@@ -1,0 +1,7 @@
+apiVersion: v2
+name: my-parent-chart
+version: 0.1.0
+dependencies:
+  - name: sub-chart
+    version: 0.1.0
+    repository: file://./charts/sub-chart

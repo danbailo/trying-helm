@@ -1,0 +1,9 @@
+sub-chart:
+  deployment:
+    replicas: 3
+    image:
+      repository: nginx
+      tag: "1.19.6"
+  service:
+    type: ClusterIP
+    port: 80
